@@ -9,6 +9,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	font-family: "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
+	overflow-x: hidden;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: #fff;
