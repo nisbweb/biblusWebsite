@@ -15,7 +15,7 @@
 </style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EventCon</title>
+    <title>Biblus</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,6 +34,14 @@
     <link rel="stylesheet" href="./index_files/animate.css">
     <link rel="stylesheet" href="./index_files/flaticon.css">
     <link rel="stylesheet" href="./index_files/slicknav.css">
+
+
+
+    <!--  OUR CSS   -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/topics.css">
+
+
 
     <link rel="stylesheet" href="./index_files/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -128,7 +136,17 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-12">
-                        <div class="slider_text text-center">
+                        <main>
+                            <div class="content">
+                                <div class="slideshow">
+                                    <div class="slide slide--current">
+                                        <div class="slide__bg slide__bg--3" ></div>
+                                        <h2 class="word word--3 biblus">B I B L U S</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                        <!-- <div class="slider_text text-center">
                             <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
                                 <img src="./index_files/shape_1.svg" alt="">
                             </div>
@@ -138,7 +156,7 @@
                             <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">12 Feb, 2020</span>
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInLeft;">Concert  2020</h3>
                             <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft;">Green Avenue, New York</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -329,14 +347,36 @@
     <script src="./index_files/plugins.js.download"></script>
 
 
+    <!--  OUR JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/wordFx.js"></script>
+    <script src="js/headingAnimation.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script>
+        setTimeout(function() {
+            const t1 = document.querySelector('.content')
+            t1.classList.add('hide')
+        }, 3200)
 
-    <!--contact js-->
-    <script src="./index_files/contact.js.download"></script>
-    <script src="./index_files/jquery.ajaxchimp.min.js.download"></script>
-    <script src="./index_files/jquery.form.js.download"></script>
-    <script src="./index_files/jquery.validate.min.js.download"></script>
-    <script src="./index_files/mail-script.js.download"></script>
+        const eventDay = new Date("Feb 5, 2020 15:37:25").getTime();
+        x = setInterval(function() {
+            var now = new Date().getTime();
+            var diff = eventDay - now;
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
+            $(".timer").html(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
+
+            if(diff < 0) {
+                clearInterval(x);
+                $(".timer").html() = "EVENT";
+            }
+        }, 1000);
+    </script>
 
     <script src="./index_files/main.js.download"></script>
 
