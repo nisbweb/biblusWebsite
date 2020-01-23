@@ -82,7 +82,7 @@
                             <div style="margin-top: 5px;" class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="file:///F:/Biblus/Biblus/index.html#">Register</a>
+                                        <a href="file:///F:/Biblus/Biblus/index.html#">Buy Tickets</a>
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +197,8 @@
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="about_info pl-68">
-                        <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">It’s time to strom your brains!</h4>
-                        <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s" style="margin-bottom: 10px;visibility: visible; animation-duration: 1s; animation-delay: 0.6s;">Biblus, one of NIE IEEE Student Branch's signature events of the year, is a National Level Paper Presentation Competition. The event follows the same format as that of the IEEE Standards. <br><br>Participation in teams of <b>maximum 3 members.</b> <br><br> The selection of abstracts and papers follow a strict plagiarism and scrutinizing procedure</p>
+                        <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">It’s time to book your seat</h4>
+                        <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s" style="margin-bottom: 10px;visibility: visible; animation-duration: 1s; animation-delay: 0.6s;">Biblus, one of NIE IEEE Student Branch's signature events of the year, is a National Level Paper Presentation Competition. The event follows the same format as that of the IEEE Standards. <br><br>Participation in teams of maximum <b>3 members.</b> <br><br> The selection of abstracts and papers follow a strict plagiarism and scrutinizing procedure</p>
                         
                         <a href="file:///F:/Biblus/Biblus/index.html#" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s;">Register</a>
                     </div>
@@ -444,90 +444,32 @@
         //     const t1 = document.querySelector('.contentr')
         //     t1.classList.add('hide')
         // }, 3200)
-            var eventDay = new Date("Jan 27, 2020 17:30:00").getTime();
-            x = setInterval(function() {
-                var now = new Date().getTime();
-                var diff = eventDay - now;
-                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            function timer(k, i) {
+                var eventDay = new Date(k).getTime();
+                x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var diff = eventDay - now;
+                    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-                $(".timer1").html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
+                    $(".timer" + i).html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
 
-                if(diff < 0) {
-                    clearInterval(x);
-                    $(".timer1").html() = "EVENT";
-                }
-            }, 1000);
+                    if(diff < 0) {
+                        clearInterval(x);
+                        $(".timer1").html() = "EVENT";
+                    }
+                }, 1000);
+            }
 
-            var eventDay = new Date("Feb 22, 2020 17:30:00").getTime();
-            x = setInterval(function() {
-                var now = new Date().getTime();
-                var diff = eventDay - now;
-                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            timer("Jan 27, 2020 17:30:00", 1)
+            timer("Feb 22, 2020 17:30:00", 2)
+            timer("FEb 25, 2020 17:30:00", 3)
+            timer("Apr 4, 2020 17:30:00", 4)
+            timer("Apr 11, 2020 17:30:00", 5)
 
-                $(".timer2").html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
-
-                if(diff < 0) {
-                    clearInterval(x);
-                    $(".timer2").html() = "EVENT";
-                }
-            }, 1000);
-
-            var eventDay = new Date("Feb 25, 2020 17:30:00").getTime();
-            x = setInterval(function() {
-                var now = new Date().getTime();
-                var diff = eventDay - now;
-                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                $(".timer3").html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
-
-                if(diff < 0) {
-                    clearInterval(x);
-                    $(".timer3").html() = "EVENT";
-                }
-            }, 1000);
-
-            var eventDay = new Date("Apr 4, 2020 17:30:00").getTime();
-            x = setInterval(function() {
-                var now = new Date().getTime();
-                var diff = eventDay - now;
-                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                $(".timer4").html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
-
-                if(diff < 0) {
-                    clearInterval(x);
-                    $(".timer4").html() = "EVENT";
-                }
-            }, 1000);
-
-            var eventDay = new Date("Apr 11, 2020 17:30:00").getTime();
-            x = setInterval(function() {
-                var now = new Date().getTime();
-                var diff = eventDay - now;
-                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                $(".timer5").html(days + "D " + hours + "H " + minutes + "M " + seconds + "S ")
-
-                if(diff < 0) {
-                    clearInterval(x);
-                    $(".timer5").html() = "EVENT";
-                }
-            }, 1000);
+            
     </script>
 
     <script src="./index_files/main.js.download"></script>
