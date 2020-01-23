@@ -1,63 +1,49 @@
-<!DOCTYPE html>
-<html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
-</style>
-<style>
-.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
-</style>
-<style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
-</style><link type="text/css" rel="stylesheet" href="./index_files/css"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
-</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
-</style><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
-</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
-</style><link type="text/css" rel="stylesheet" href="./index_files/css(1)"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
-</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
-    
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Biblus</title>
+    <title>EventCon</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="file:///F:/Biblus/Biblus/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="icon" href="IEEE.ico" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
 
-    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
-    <link rel="stylesheet" href="./index_files/owl.carousel.min.css">
-    <link rel="stylesheet" href="./index_files/magnific-popup.css">
-    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
-    <link rel="stylesheet" href="./index_files/themify-icons.css">
-    <link rel="stylesheet" href="./index_files/gijgo.css">
-    <link rel="stylesheet" href="./index_files/nice-select.css">
-    <link rel="stylesheet" href="./index_files/animate.css">
-    <link rel="stylesheet" href="./index_files/flaticon.css">
-    <link rel="stylesheet" href="./index_files/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
-
+    
 
     <!--  OUR CSS   -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/topics.css">
+    <style> .round{ color: #A90615; } .roundNo {color: white;}</style>
 
 
-
-    <link rel="stylesheet" href="./index_files/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-<script type="text/javascript" charset="UTF-8" src="./index_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/map.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/stats.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/ViewportInfoService.GetViewportInfo"></script><script type="text/javascript" charset="UTF-8" src="./index_files/f.txt"></script><script type="text/javascript" charset="UTF-8" src="./index_files/f(1).txt"></script><script type="text/javascript" charset="UTF-8" src="./index_files/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/AuthenticationService.Authenticate"></script><script type="text/javascript" charset="UTF-8" src="./index_files/marker.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/QuotaService.RecordEvent"></script><script type="text/javascript" charset="UTF-8" src="./index_files/f(2).txt"></script><script type="text/javascript" charset="UTF-8" src="./index_files/f(3).txt"></script><script type="text/javascript" charset="UTF-8" src="./index_files/common.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/util.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/map.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/onion.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/stats.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/controls.js(1).download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/marker.js(1).download"></script></head>
+</head>
 
 <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
+    <!-- header-start -->
+    
     <!-- header-start -->
     <header>
         <div class="header-area " style="margin-top: 3px;">
@@ -67,7 +53,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-3">
                                 <div class="logo">
-                                    <a href="file:///F:/Biblus/Biblus/index.html">
+                                    <a href="#">
                                         <img src="IEEE.png" style="position: relative; left: -26px; height: 45px; width: 160px;" alt="">
                                     </a>
                                 </div>
@@ -82,50 +68,12 @@
                             <div style="margin-top: 5px;" class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="file:///F:/Biblus/Biblus/index.html#">Buy Tickets</a>
+                                        <a href="http://bit.ly/biblus2020">Register</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"><div class="slicknav_menu"><a href="file:///F:/Biblus%20Website/index.html#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style=""><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                                            <li><a href="file:///F:/Biblus/Biblus/index.html" role="menuitem" tabindex="-1">home</a></li>
-                                            <li><a href="file:///F:/Biblus/Biblus/performer.html" role="menuitem" tabindex="-1">Performer</a></li>
-                                            
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="file:///F:/Biblus%20Website/index.html#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="file:///F:/Biblus/Biblus/index.html#" tabindex="-1">pages <i class="ti-angle-down"></i></a>
-                                                <span class="slicknav_arrow">+</span></a><ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="file:///F:/Biblus/Biblus/about.html" role="menuitem" tabindex="-1">about</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/Program.html" role="menuitem" tabindex="-1">Program</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/Venue.html" role="menuitem" tabindex="-1">Venue</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/elements.html" role="menuitem" tabindex="-1">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="file:///F:/Biblus%20Website/index.html#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="file:///F:/Biblus/Biblus/index.html#" tabindex="-1">blog <i class="ti-angle-down"></i></a>
-                                                <span class="slicknav_arrow">+</span></a><ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="file:///F:/Biblus/Biblus/blog.html" role="menuitem" tabindex="-1">blog</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/single-blog.html" role="menuitem" tabindex="-1">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="file:///F:/Biblus/Biblus/contact.html" role="menuitem" tabindex="-1">Contact</a></li>
-                                        </ul></div><div class="slicknav_menu"><a href="file:///F:/Biblus/Biblus/index.html#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style=""><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                                            <li><a href="file:///F:/Biblus/Biblus/index.html" role="menuitem" tabindex="-1">home</a></li>
-                                            <li><a href="file:///F:/Biblus/Biblus/performer.html" role="menuitem" tabindex="-1">Performer</a></li>
-                                            
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="file:///F:/Biblus/Biblus/index.html#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""></a><a href="file:///F:/Biblus/Biblus/index.html#" tabindex="-1">pages <i class="ti-angle-down"></i></a>
-                                                <span class="slicknav_arrow">+</span><ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="file:///F:/Biblus/Biblus/about.html" role="menuitem" tabindex="-1">about</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/Program.html" role="menuitem" tabindex="-1">Program</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/Venue.html" role="menuitem" tabindex="-1">Venue</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/elements.html" role="menuitem" tabindex="-1">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="file:///F:/Biblus/Biblus/index.html#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""></a><a href="file:///F:/Biblus/Biblus/index.html#" tabindex="-1">blog <i class="ti-angle-down"></i></a>
-                                                <span class="slicknav_arrow">+</span><ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="file:///F:/Biblus/Biblus/blog.html" role="menuitem" tabindex="-1">blog</a></li>
-                                                    <li><a href="file:///F:/Biblus/Biblus/single-blog.html" role="menuitem" tabindex="-1">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="file:///F:/Biblus/Biblus/contact.html" role="menuitem" tabindex="-1">Contact</a></li>
-                                        </ul></div></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -169,50 +117,57 @@
         </div>
     </div>
     <!-- slider_area_end -->
-
-    <!-- performar_area_start  -->
-    
-    <!-- performar_area_end  -->
-
     <!-- about_area_start  -->
     <div class="about_area black_bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section_title text-center mb-80">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">About Program</h3>
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >About</h3>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6">
-                    <div class="about_thumb">
-                        <div class="shap_3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">
-                            <img src="./index_files/shape_3.svg" alt="">
-                        </div>
-                        <div class="thumb_inner  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-12 col-md-12">
                     <div class="about_info pl-68">
-                        <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">It’s time to book your seat</h4>
-                        <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s" style="margin-bottom: 10px;visibility: visible; animation-duration: 1s; animation-delay: 0.6s;">Biblus, one of NIE IEEE Student Branch's signature events of the year, is a National Level Paper Presentation Competition. The event follows the same format as that of the IEEE Standards. <br><br>Participation in teams of maximum <b>3 members.</b> <br><br> The selection of abstracts and papers follow a strict plagiarism and scrutinizing procedure</p>
-                        
-                        <a href="file:///F:/Biblus/Biblus/index.html#" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s;">Register</a>
+                        <h4 class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">It’s time to book your seat</h4>
+                        <p  class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Biblus, one of NIE IEEE Student Branch's signature events of the year, is a National Level Paper Presentation Competition. The event follows the same format as that of the IEEE Standards. <br><br>Participation in teams of maximum <b>3 members.</b> <br><br> The selection of abstracts and papers follow a strict plagiarism and scrutinizing procedure</p>
+                        <a href="http://bit.ly/biblus2020" class="boxed-btn3  wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s">Resgister</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
     <!-- about_area_end  -->
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h2  class="roundNo">Round 1</h2>
+            <h2  class="round">Abstract Submission</h2> 
+            <p>Participants have to submit a brief overview of their innovative ideas within the deadline.<p> 
+            
+          </div>
+          <div class="col-sm">
+        <h2 class="roundNo" > Round 2</h2>
+        <h2 class="round">Paper Submission</h2> 
 
+        <p>The participants selected for this round must submit their final papers in accordance with the abstract submitted by them.</p>
+          </div>
+          <div class="col-sm">
+            <h2 class="roundNo">Round 3</h2>
+            <h2 class="round">Paper Presentation</h2>
+            <p>The participants selected for the final round must present their papers before a panel of judges, in the form of an oral presentation or interactive presentation.</p>
+          </div>
+        </div>
+    </div>
     <div class="program_details_area detials_bg_1 overlay2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+                    <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
                         <h3>Important Tentative Dates</h3>
                     </div>
                 </div>
@@ -224,24 +179,25 @@
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">Abstract Submission</span>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">27th January 2020</h4>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;"><span class="timer1"></span></h4>
-                                    <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">
-                                        <br><br><br><br>
-                                    </div>
+                                    <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Abstract Submission</span>
+                                    <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">27th January 2020</h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s"><span class="timer1"></span></h4>
                                 </div>
+                                <div class="thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <br><br><br><br>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="single_propram">
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">Result of Abstract Submission</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">22nd February 2020</h4>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;"><span class="timer2"></span></h4>
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Result of Abstract Submission</span>
+                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">22nd February 2020</h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s"><span class="timer2"></span></h4>
                                 </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">
+                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <br><br><br><br>
                                 </div>
                             </div>
@@ -250,12 +206,25 @@
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">Paper Submission                                    </span>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">25th February 2020</h4>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;"><span class="timer3"></span></h4>
+                                    <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Paper Submission</span>
+                                    <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">25th February 2020</h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s"><span class="timer3"></span></h4>
+                                </div>
+                                <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_propram">
+                            <div class="inner_wrap">
+                                <div class="circle_img"></div>
+                                <div class="porgram_top">
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Result of Paper Submission                                    </span>
+                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">4th April 2020</h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s"><span class="timer4"></span></h4>
 
                                 </div>
-                                <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">
+                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <br><br><br><br>
                                 </div>
                             </div>
@@ -264,24 +233,11 @@
                             <div class="inner_wrap">
                                 <div class="circle_img"></div>
                                 <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">Result of Paper Submission                                    </span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">4th April 2020</h4>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;"><span class="timer4"></span></h4>
+                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Paper Presentation</span>
+                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">11th April 2020</h4>
+                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s"><span class="timer5"></span></h4>
                                 </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">
-                                    <br><br><br><br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_propram">
-                            <div class="inner_wrap">
-                                <div class="circle_img"></div>
-                                <div class="porgram_top">
-                                    <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">Paper Presentation</span>
-                                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;">11th April 2020</h4>
-                                    <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s;"><span class="timer5"></span></h4>
-                                </div>
-                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s;">
+                                <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                     <br><br><br><br>
                                 </div>
                             </div>
@@ -291,11 +247,12 @@
             </div>
         </div>
     </div>
-    
+
     <div class="topics" style="color: white !important;">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+                    <br><br><br><br><br><br>
                     <h3 class="wow fadeInDownBig topic hide" id="topicc">Topics</h3>
                 </div>
             </div>
@@ -409,36 +366,40 @@
             })})})})})})})
 
     </script>
-
     <!-- JS here -->
-    <script src="./index_files/modernizr-3.5.0.min.js.download"></script>
-    <script src="./index_files/jquery-1.12.4.min.js.download"></script>
-    <script src="./index_files/popper.min.js.download"></script>
-    <script src="./index_files/bootstrap.min.js.download"></script>
-    <script src="./index_files/owl.carousel.min.js.download"></script>
-    <script src="./index_files/isotope.pkgd.min.js.download"></script>
-    <script src="./index_files/ajax-form.js.download"></script>
-    <script src="./index_files/waypoints.min.js.download"></script>
-    <script src="./index_files/jquery.counterup.min.js.download"></script>
-    <script src="./index_files/imagesloaded.pkgd.min.js.download"></script>
-    <script src="./index_files/scrollIt.js.download"></script>
-    <script src="./index_files/jquery.scrollUp.min.js.download"></script>
-    <script src="./index_files/wow.min.js.download"></script>
-    <script src="./index_files/gijgo.min.js.download"></script>
-    <script src="./index_files/nice-select.min.js.download"></script>
-    <script src="./index_files/jquery.slicknav.min.js.download"></script>
-    <script src="./index_files/jquery.magnific-popup.min.js.download"></script>
-    <script src="./index_files/tilt.jquery.js.download"></script>
-    <script src="./index_files/plugins.js.download"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
 
 
-    <!--  OUR JAVASCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/charming.min.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/wordFx.js"></script>
-    <script src="js/headingAnimation.js"></script>
-    <script src="js/jQuery.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
     <script>
         // setTimeout(function() {
         //     const t1 = document.querySelector('.contentr')
@@ -471,8 +432,14 @@
 
             
     </script>
+    
+     OUR JAVASCRIPT
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <script src="js/charming.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/wordFx.js"></script>
+    <script src="js/headingAnimation.js"></script>
+    <script src="js/index.js"></script>
+</body>
 
-    <script src="./index_files/main.js.download"></script>
-
-
-<a id="scrollUp" href="file:///F:/Biblus/Biblus/index.html#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="ti-angle-up"></i></a><a id="scrollUp" href="file:///F:/Biblus%20Website/index.html#top" style="display: block; position: fixed; z-index: 2147483647;"><i class="ti-angle-up"></i></a></body></html>
+</html>

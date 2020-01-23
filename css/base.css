@@ -238,6 +238,7 @@ main {
 
 /* Word + SVG styles */
 .word {
+	color:white !important;
 	position: relative;
     display: flex;
     flex-direction: row;
