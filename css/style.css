@@ -2400,14 +2400,14 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .detials_bg_1 {
-  background-image: url(../img/program_details/details_banner.png);
+  
 }
 
 /* line 4, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .program_details_area {
   background-size: cover;
   background-position: bottom center;
-  padding: 150px 0;
+  padding: 150px 0 0 0;
 }
 
 /* line 11, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
