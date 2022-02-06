@@ -5,7 +5,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 *::before {
 	box-sizing: border-box;
 }
-
+h5{
+	color:#b9b9b9;
+	font-family: "Franklin Gothic Medium",
+}
+h2{
+	color:#ff7300;
+}
 body {
 	font-family: "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
@@ -328,4 +334,24 @@ main {
 	.slide .word {
 		font-size: 2em;
 	}
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
 }
